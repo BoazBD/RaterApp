@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:indeterminate="true"
+        android:scaleX="0.3"
+        android:scaleY="0.3" />
+    <ImageView
+        android:id="@+id/numVotes"
+        android:visibility="invisible"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image"
+        android:layout_toEndOf="@id/image"
+        android:background="@drawable/numvotes" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_toEndOf="@id/numVotes" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_toEndOf="@id/numVotes"
+        android:id="@+id/questionmark"
+        android:src="@drawable/questionmark"
+        android:visibility="invisible"></ImageView>
+
+    <TextView
+        android:text="Rates"
+        android:visibility="invisible"
+        android:id="@+id/ratesTxt"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@id/numVotes"
+        android:layout_below="@id/chart" />
+    <TextView
+        android:id="@+id/averageTxt"
+        android:visibility="invisible"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Average rate:"></TextView>
+    <TextView
+        android:id="@+id/ratingsProcessText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:text="Ratings are being processed, come back later!"
+        android:textSize="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:visibility="invisible"></TextView>
+    <Button
+        android:id="@+id/goRateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RATE!"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/ratingsProcessText"
+        android:visibility="invisible"></Button>
+</RelativeLayout>

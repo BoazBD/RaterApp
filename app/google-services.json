@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1000058130493",
+    "firebase_url": "https://rater-977e7-default-rtdb.firebaseio.com",
+    "project_id": "rater-977e7",
+    "storage_bucket": "rater-977e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000058130493:android:2785484dd245c6151cda54",
+        "android_client_info": {
+          "package_name": "com.bardavid.boaz.rater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000058130493-dub22idm7ep23inv3cmu17ub32kqs3d3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bardavid.boaz.rater",
+            "certificate_hash": "85e21d92e6fadb9eca9b46d66a00cab7f1d58e49"
+          }
+        },
+        {
+          "client_id": "1000058130493-cg49qj4h9jv2cq6c47lbc9ipdhja4lru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1kp4QrvCJaUUfCTn4ARyx05nAOhiF8QA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000058130493-cg49qj4h9jv2cq6c47lbc9ipdhja4lru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
